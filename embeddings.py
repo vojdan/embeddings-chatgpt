@@ -36,5 +36,13 @@ client = OpenAI()
 
 # a function to get the embedding of a text string
 def get_embedding(text: str, model: str = "text-embedding-3-small") -> list:
+    text = text.replace("\n", " ")
     response = client.embeddings.create(input=text, model=model)
+    return response.data[0].embedding
+
+
+# a function to get the embedding for the amazon fine food reviews
+def get_embedding_batch(text, model="text-embedding-3-small"):
+    text = text.replace("\n", " ")
+    response = client.embeddings.create(input=[text], model=model)
     return response.data[0].embedding
