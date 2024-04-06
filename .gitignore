@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+
+# env files
+.env
+
+# embeddings folder
+embeddings/

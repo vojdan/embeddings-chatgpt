@@ -1,0 +1,5 @@
+# ast # for converting embeddings saved as strings back to arrays
+openai # for calling the OpenAI API
+pandas # for storing text and embeddings data
+tiktoken # for counting tokens
+scipy # for calculating vector similarities for search
