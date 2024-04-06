@@ -1,6 +1,4 @@
-import sys
 import config
-import ast  # for converting embeddings saved as strings back to arrays
 from openai import OpenAI  # for calling the OpenAI API
 import pandas as pd  # for storing text and embeddings data
 import tiktoken  # for counting tokens
